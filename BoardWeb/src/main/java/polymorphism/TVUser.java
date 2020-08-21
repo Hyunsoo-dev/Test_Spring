@@ -9,6 +9,11 @@ public class TVUser {
 		//1. Spring 컨테이너를 구동한다.
 		AbstractApplicationContext factory = new GenericXmlApplicationContext("applicationContext.xml");
 		TV tv = (TV)factory.getBean("tv");
+		tv.powerOn();
+		tv.powerOff();
+		tv.volumeUp();
+		tv.volumeDown();
+		
 		factory.close();
 	}
 }
