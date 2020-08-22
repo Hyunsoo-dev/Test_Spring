@@ -1,17 +1,22 @@
 package polymorphism;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("tv")
 public class SamsungTV implements TV {
 	
+	@Autowired
 	private Speaker speaker;
 	private int price;
 	
-	public void setSpeaker(Speaker speaker) {
-		this.speaker = speaker;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
+//	public void setSpeaker(Speaker speaker) {
+//		this.speaker = speaker;
+//	}
+//
+//	public void setPrice(int price) {
+//		this.price = price;
+//	}
 
 	public SamsungTV() {
 		System.out.println("SaumsungTV °´Ã¼ »ý¼º");
