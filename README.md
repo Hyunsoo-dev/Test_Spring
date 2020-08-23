@@ -12,8 +12,40 @@
       * Controller
       * Service
       * Repository
-  * Autowired
-  * Qualifier
-  * Resource
-  * inject 
+    * Autowired
+    * Qualifier
+    * Resource
+    * inject 
   * 비즈니스 컴포넌트 작성
+
+---
+### Day_02
+  *
+  * 스프링 AOP
+  * AOP 용어 
+    * JoinPoint
+    * Pointcut 
+    * Advice
+    * Aspect or Advisor 
+  
+  * AOP 엘리먼트
+    * <aop:config>
+    * <aop:pointcut>
+    * <aop:aspect>
+    * <aop:advisor>
+   
+  * Advice 동작 시점
+    * Before
+    * After
+    * After Throwing
+    * After Returning
+    * Around
+   
+  * JoinPoint 
+  * 바인드 변수
+  
+  * 어노테이션 기반 AOP
+    * xml ->  <aop:aspectj-autoproxy>
+    * 어노테이션 기반 AOP 설정
+    * 어드바이스 동작 시점 
+    * 외부 Pointcut 참조
