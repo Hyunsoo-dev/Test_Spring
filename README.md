@@ -20,7 +20,7 @@
 
 ---
 ### Day_02
-  *
+  * [02](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb2)
   * 스프링 AOP
   * AOP 용어 
     * JoinPoint
