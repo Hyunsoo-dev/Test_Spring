@@ -65,3 +65,10 @@
   * 트랜잭션 관리자 등록 
   * 트랜잭션 어드바이스 설정 
   * AOP 설정을 통한 트랜잭션 적용 
+
+
+
+---
+### Day_04
+  * [BoardWeb04](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb4)
+  * Model 1 방식 게시판 구현 
