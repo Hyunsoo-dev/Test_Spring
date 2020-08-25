@@ -66,8 +66,8 @@ public class BoardController {
 	public String getBoardList(BoardVO vo, Model model){
 		System.out.println("글 목록 검색 처리");
 		
-		List<BoardVO> boardList = boardService.getBoardList(vo);
-		model.addAttribute("boardList" , boardList);
+		/*List<BoardVO> boardList = boardService.getBoardList(vo);*/
+		model.addAttribute("boardList" , boardService.getBoardList(vo));
 		return "getBoardList.jsp";
 	}
 }

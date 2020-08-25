@@ -4,10 +4,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>    
-<%
-	// 세션에 저장된 글 목록을 꺼낸다.
-	List<BoardVO> boardList = (List)session.getAttribute("boardList");
-%>    
+   
     
 <!DOCTYPE html>
 <html>
