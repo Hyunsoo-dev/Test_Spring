@@ -72,3 +72,11 @@
 ### Day_04
   * [BoardWeb04](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb4)
   * Model 1 방식 게시판 구현 
+  
+  * [BoardWeb05](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb5)
+  * Model 2 방식 게시판 구현 
+  * DispatcherServlet 구현
+  * HandlerMapping 구현
+  * Controller 구현
+  * viewResolver 구현
+  * JSTL, EL 을 이용해 view 페이지에 자바 코드 제거
