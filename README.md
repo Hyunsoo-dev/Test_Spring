@@ -57,4 +57,11 @@
      * JdbcDaoSupport 상속 
      * JdbcTemplate 클래스 <bean> 등록, 의존성 주입
  
- 
+ ---
+ ### Day_03
+  * [BoardWeb03](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb3)
+  * 트랜잭션 처리
+  * 트랜잭션 네임스페이스 등록 
+  * 트랜잭션 관리자 등록 
+  * 트랜잭션 어드바이스 설정 
+  * AOP 설정을 통한 트랜잭션 적용 
