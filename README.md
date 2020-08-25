@@ -3,7 +3,7 @@
 * Spring framework 를 이용하여 게시판을 만듭니다. 
 
 ### Day_01 
-  * [01](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb)
+  * [BoardWeb1](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb)
   * 스프링 컨테이너 설정 및 구동
   * 의존성 주입
     * 생성자 인젝션, setter 인젝션, Collection 객체 설정
@@ -20,7 +20,7 @@
 
 ---
 ### Day_02
-  * [02](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb2)
+  * [BoardWeb22](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb2)
   * 스프링 AOP
   * AOP 용어 
     * JoinPoint
@@ -49,3 +49,10 @@
     * 어노테이션 기반 AOP 설정
     * 어드바이스 동작 시점 
     * 외부 Pointcut 참조
+ 
+ * 스프링 JDBC 
+   * JDBC 를 사용하기 위해 dbcp 설정 추가
+   * DataSource 설정 
+   * DAO 클래스에서 JdbcTemplate 객체 얻기 
+     * JdbcDaoSupport 상속 
+     * JdbcTemplate 클래스 <bean> 등록, 의존성 주입
