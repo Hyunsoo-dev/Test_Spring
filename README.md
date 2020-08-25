@@ -20,7 +20,7 @@
 
 ---
 ### Day_02
-  * [BoardWeb22](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb2)
+  * [BoardWeb2](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb2)
   * 스프링 AOP
   * AOP 용어 
     * JoinPoint
@@ -56,3 +56,5 @@
    * DAO 클래스에서 JdbcTemplate 객체 얻기 
      * JdbcDaoSupport 상속 
      * JdbcTemplate 클래스 <bean> 등록, 의존성 주입
+ 
+ 
