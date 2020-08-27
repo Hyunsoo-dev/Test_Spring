@@ -80,3 +80,17 @@
   * Controller 구현
   * viewResolver 구현
   * JSTL, EL 을 이용해 view 페이지에 자바 코드 제거
+  
+  
+  ---
+  ### Day_05
+    * [BoardWeb06](https://github.com/Hyunsoo-dev/Test_Spring/commits/master/BoardWeb6)
+    * 스프링 프레임워크가 지원해주는 DispatcherServlet 설정 및 인코딩 설정
+    * 스프링 설정 파일에 Controller , HandlerMapping, ViewResolver 구현
+    
+    * [BoardWeb07](https://github.com/Hyunsoo-dev/Test_Spring/commits/master/BoardWeb7) 
+    * @Controller 와 @RequestMapping을 이용하여 Controller 구현 
+    * 어노테이션으로 게시판 구현하기
+    
+    * [BoardWeb08](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb8)
+    * 프레젠테이션 레이어와 비즈니스 레이어 통합하기
