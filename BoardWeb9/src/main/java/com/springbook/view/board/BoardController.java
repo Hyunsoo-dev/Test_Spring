@@ -11,9 +11,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.springbook.biz.board.BoardListVO;
 import com.springbook.biz.board.BoardService;
 import com.springbook.biz.board.BoardVO;
 import com.springbook.biz.board.impl.BoardDAO;
@@ -22,6 +24,17 @@ import com.springbook.biz.board.impl.BoardDAO;
 @SessionAttributes("board")
 public class BoardController {
 	
+	
+	@RequestMapping("/dataTransform.do")
+	@ResponseBody
+	public BoardListVO dataTransform(BoardVO vo , BoardDAO boardDAO){
+		vo.setSearchCondition("TITLE");
+		vo.setSearchKeyword("");
+		List<BoardVO> boardList = boardDAO.getBoardList(vo);
+		BoardListVO boardListVO = new BoardListVO();
+		boardListVO.setBoardList(boardList);
+		return boardListVO;
+	}
 	
 	//검색 조건 목록 설정 
 	@ModelAttribute("conditionMap")
