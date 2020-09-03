@@ -104,3 +104,14 @@
   * [BoardWeb09](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb9)
   * 다국어 처리
   * JSON, XML 로 데이터 변환 
+  
+  * [MyBatisProject](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/MyBatisProject)
+  * MyBaitsProject 특징
+    * Java 코드 단순화 
+    * SQL문 xml 파일로 분리
+  * java ORM 플러그인 
+    * MyBatis 환경 설정을 도와줌.
+  * SQL Mapper XML 파일 설정 
+    * DB 연동 관련 SQL 문 작성
+  * MyBatis 환경 설정 파일 설정
+  * SqlSession 객체 
