@@ -95,3 +95,12 @@
     
    * [BoardWeb08](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb8)
    * 프레젠테이션 레이어와 비즈니스 레이어 통합하기
+
+
+
+---
+ ### Day_06
+  
+  * [BoardWeb09](https://github.com/Hyunsoo-dev/Test_Spring/tree/master/BoardWeb9)
+  * 다국어 처리
+  * JSON, XML 로 데이터 변환 
