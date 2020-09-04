@@ -18,7 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.springbook.biz.board.BoardListVO;
 import com.springbook.biz.board.BoardService;
 import com.springbook.biz.board.BoardVO;
-import com.springbook.biz.board.impl.BoardDAO;
+import com.springbook.biz.board.impl.BoardDAOMybatis;
+
 
 @Controller
 @SessionAttributes("board")
@@ -27,7 +28,7 @@ public class BoardController {
 	
 	@RequestMapping("/dataTransform.do")
 	@ResponseBody
-	public BoardListVO dataTransform(BoardVO vo , BoardDAO boardDAO){
+	public BoardListVO dataTransform(BoardVO vo , BoardDAOMybatis boardDAO){
 		vo.setSearchCondition("TITLE");
 		vo.setSearchKeyword("");
 		List<BoardVO> boardList = boardDAO.getBoardList(vo);
@@ -48,7 +49,7 @@ public class BoardController {
 	
 	//글 등록
 	@RequestMapping(value="/insertBoard.do")
-	public String insertBoard(BoardVO vo,BoardDAO boardDAO) throws IOException{
+	public String insertBoard(BoardVO vo,BoardDAOMybatis boardDAO) throws IOException{
 		System.out.println("글 등록 처리");
 		
 		//파일 업로드 처리
@@ -63,14 +64,14 @@ public class BoardController {
 	
 	//글 수정
 	@RequestMapping(value="/updateBoard.do")
-	public String updateBoard(@ModelAttribute("board") BoardVO vo, BoardDAO boardDAO) {
+	public String updateBoard(@ModelAttribute("board") BoardVO vo, BoardDAOMybatis boardDAO) {
 		boardDAO.updateBoard(vo);
 		return "getBoardList.do";
 	}
 	
 	//글 삭제
 	@RequestMapping(value="/deleteBoard.do")
-	public String deleteBoard(BoardVO vo , BoardDAO boardDAO) {
+	public String deleteBoard(BoardVO vo , BoardDAOMybatis boardDAO) {
 		System.out.println("글 삭제 처리"); 
 		boardDAO.deleteBoard(vo);
 		return "getBoardList.do";
@@ -78,7 +79,7 @@ public class BoardController {
 	
 	//글 상세 조회
 	@RequestMapping(value="/getBoard.do")
-	public String getBoard(BoardVO vo, BoardDAO boardDAO,Model model) {
+	public String getBoard(BoardVO vo, BoardDAOMybatis boardDAO,Model model) {
 		System.out.println("글 상세 조회 처리");
 		
 		model.addAttribute("board" , boardDAO.getBoard(vo));
@@ -86,7 +87,7 @@ public class BoardController {
 	}
 	//글 목록 검색
 	@RequestMapping(value="/getBoardList.do")
-	public String getBoardList(BoardVO vo, BoardDAO boardDAO,Model model){
+	public String getBoardList(BoardVO vo, BoardDAOMybatis boardDAO,Model model){
 		System.out.println("글 목록 검색 처리");
 		//Null Check
 		if(vo.getSearchCondition() == null) vo.setSearchCondition("TITLE");

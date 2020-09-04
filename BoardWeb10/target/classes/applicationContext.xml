@@ -13,6 +13,16 @@
 	<context:component-scan base-package="com.springbook.biz"/>
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 	
+	<!-- SqlSessionFactoryBean 설정 -->
+	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="classpath:sql-map-config.xml"/>
+	</bean>
+	
+	<!-- SqlSessionTemplate 설정 -->
+	<bean class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sessionFactory"></constructor-arg>
+	</bean>
 	
 	<!-- DataSouce 설정 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" >
